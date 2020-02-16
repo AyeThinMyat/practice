@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 20px;
+            padding: 20px;
+            background: #156DA9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation-name: atm;
+            animation-duration: 4s;
+            animation-delay: 2s;
+        }
+        @keyframes atm {
+            from{background-color: tomato;}
+            to{background-color: cyan;}
+        }
+        .login-box{
+            width: 320px;
+            height: 300px;
+            background: #ffffff;
+            padding: 60px 30px;
+            border-radius:5px ;
+            text-align: center;
+            border: 2px solid #6fd653;
+            -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+            -moz-box-shadow:  10px 10px 5px -4px rgba(0,0,0,0.75);
+            box-shadow:  10px 10px 5px -4px rgba(0,0,0,0.75);
+            animation-name: demo;
+            animation-duration: 5s;
+        }
+        @keyframes demo {
+            0%{background-color: coral;}
+            25%{background-color: crimson;}
+            75%{background-color: pink;}
+            100%{background-color: blueviolet;}
+        }
+        .login-box h1{
+            text-transform: uppercase;
+            color: #00bcd4;
+        }
+        .login-box input[type="text"],.login-box input[type="password"]{
+            width: 60%;
+            margin-bottom: 20px;
+            border-radius: 30px;
+            background: transparent;
+            outline: none;
+            border: 2px solid #6fd653;
+            font-size: 13px;
+            height: 40px;
+            text-align: center;
+            transition: 0.27s;
+        }
+        .login-box input[type="text"]:focus,
+        .login-box input[type="password"]:focus{
+            width: 80%;
+            border-color: #6fd653;
+        }
+        .login-box input[type="submit"]{
+            width: 40%;
+            border: none;
+            outline: none;
+            background: #156DA9;
+            padding: 10px 0;
+            border-radius: 30px;
+            color: #ffffff;
+            font-weight: 500;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .login-box input[type="submit"]:hover{
+            background: #6fd653;
+            transition: 2s;
+        }
+        .login-box input[type="submit"]:focus{
+            transform: scale(1.1);
+        }
+        .login-box a{
+            text-decoration: none;
+            font-size: 12px;
+            color: #00bcd4;
+        }
+        .login-box a:hover{
+            color: #6fd653;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="login-box">
+    <h1>Login</h1>
+    <form action="#">
+        <label>
+            <input type="text" name="username" placeholder="Username">
+        </label>
+        <label>
+            <input type="password" name="password" placeholder="Password">
+        </label>
+        <input type="submit" value="Login">
+    </form>
+    <a href="#">Forget Password</a>
+</div>
+</body>
+</html>
